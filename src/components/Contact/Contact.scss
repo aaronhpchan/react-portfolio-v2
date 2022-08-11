@@ -1,0 +1,72 @@
+.app__contact {
+  width: 100%;
+  flex: 1;
+  flex-direction: column;
+  padding: calc(1.75rem * 2 + 46px) 5% 0;
+
+  @media screen and (max-width: 476px) {
+    padding-top: calc(1.75rem * 2 + 36px);
+  }
+}
+
+.app__contact-form {
+  width: 700px;
+  flex-direction: column;
+  margin: 4rem 2rem 0;
+
+  div {
+    width: 100%;
+    margin: 0.75rem 0;
+    cursor: pointer;
+
+    label, input, textarea {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 700;
+      font-family: var(--font-base);
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 0.95rem;
+      color: var(--black-color);
+      border: 1px solid #a5a5a5;
+    }
+
+    textarea {
+      height: 170px;
+      font-weight: 700;
+      resize: none;
+    }
+
+    ::placeholder { 
+      color: #7e7e7e;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 80vw;
+    }
+  }
+
+  button {
+    padding: 1rem 2rem;
+    margin-top: 0.75rem;
+    border-radius: 1.5%;
+    border: none;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    @media screen and (min-width: 2000px) {
+      font-size: 1.5rem;
+      padding: 1.125rem 2.25rem;
+    }
+  }
+}
+
+.app__contact-confirm {
+  margin-top: 1.5rem;
+}

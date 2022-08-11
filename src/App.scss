@@ -1,0 +1,38 @@
+.app {
+  background-color: var(--primary-color);
+  font-family: var(--font-base);
+  overflow: hidden;
+}
+
+.app__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head-text {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--black-color);
+  text-align: center;
+  text-transform: capitalize;
+
+  @media screen and (min-width: 2000px) {
+    font-size: 4rem;
+  }
+}
+
+.head-underline {
+  width: 3rem;
+  height: 5px;
+  position: relative;
+  left: calc((100% - 3rem) / 2);
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  margin: 0.5rem 0 1rem;
+}
+
+
+
+
+

@@ -1,0 +1,88 @@
+.app__marquee {
+  display: flex;
+  position: relative;
+  padding: calc(1.75rem * 2 + 46px) 0;
+  overflow: hidden;
+  transform: rotate(-1.325deg);
+
+  @media screen and (min-width: 2000px) {
+    padding: calc((1.75rem * 2 + 46px) * 1.25) 0;
+  }
+
+  @media screen and (max-width: 476px) {
+    padding: calc(1.75rem * 2 + 36px) 0;
+  }
+}
+
+.app__marquee-container {
+  overflow: hidden;
+  display: inline-block;
+  position: absolute;
+  animation: move linear 100s infinite;
+  min-width: 100%;
+
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(-50%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.app__marquee-section {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 1rem 0;
+  background-color: var(--gray-color);
+
+  @media screen and (max-width: 476px) {
+    padding: 0.67rem 0;
+  }
+}
+
+.app__marquee-skill {
+  display: inline-flex;
+  align-items: center;
+  margin: 1.5rem 0;
+  overflow: hidden;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  text-transform: uppercase;
+
+  img {
+    margin: 0 1.5rem;
+  }
+
+  span {
+    margin: 0 0.5rem;
+  }
+
+  @media screen and (min-width: 2000px) {
+    font-size: 30px;
+  }
+
+  @media screen and (max-width: 476px) {
+    font-size: 14px;
+  }
+}
+
+.app__marquee-icon {
+  width: 25px;
+  height: 25px;
+
+  @media screen and (min-width: 2000px) {
+    width: 37.5px;
+    height: 37.5px;
+  }
+}

@@ -1,0 +1,100 @@
+.app__projects {
+  flex: 1;
+  flex-direction: column;
+  padding: calc(1.75rem * 2 + 46px) 5% 0;
+
+  @media screen and (max-width: 476px) {
+    padding-top: calc(1.75rem * 2 + 36px);
+  }
+}
+
+.app__projects-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2.5rem;
+  margin: 3.5rem 0 3rem; 
+
+  @media screen and (max-width: 992px) {
+    display: block;
+  }
+}
+
+.app__projects-img {
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.app__projects-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+  h3, p, a {
+    color: var(--black-color);
+  }
+
+  h3 {
+    font-size: 1.85rem;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    @media screen and (max-width: 1200px) {
+      margin: 1rem 0;
+    }
+  }
+
+  a {
+    font-size: 1.25rem;
+    
+    &:nth-of-type(1) {
+      margin-right: 3rem;
+    }
+
+    &:hover {
+      color: var(--secondary-color);
+    }
+  }
+
+  @media screen and (min-width: 2000px) {
+    h3 {
+      font-size: 2.75rem;
+    }
+
+    p {
+      font-size: 2.25rem;
+    }
+
+    a {
+      font-size: 1.875rem;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    margin-top: 1.5rem;
+    
+    h3 {
+      margin-top: 0.75rem;
+    }
+  }
+}
+
+.app__projects-badge {
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  padding: 6px;
+  margin: 0.5rem 0;
+  display: inline-block;
+
+  @media screen and (min-width: 2000px) {
+    font-size: 1.5rem;
+  }
+}
+
