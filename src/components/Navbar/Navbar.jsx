@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <nav className='app__navbar'>
       <div className='app__navbar-logo'>
-        <a href='#home'><img src={require('../../images/logo_kiez_slanted.png')}/></a>
+        <a href='#home'><img src={require('../../images/logo_kiez_slanted.png')} alt='Logo'/></a>
       </div>
       <div className='app__navbar-items'>
         <ul className='app__navbar-links'>

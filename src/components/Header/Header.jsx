@@ -39,7 +39,7 @@ const Header = () => {
         transition={{ duration: 2.5 }}
         className='app__header-grid'
       >
-        <img src={require('../../images/header_img.png')}/>
+        <img src={require('../../images/header_img.png')} alt='Header'/>
       </motion.div>
     </div>
   );
